@@ -4,6 +4,8 @@ var a = "The variable's called \"a\"" + " This string is concatenated "; // stat
 document.write(a);
 <br></br>
 
+alert("prepare for the family"); // just a quick alert//
+
 var family = "the house", dad = "branden", mom= "Li", daughter ="Quark"  // declare all variables and give them a string value//
 var family =family.fontcolor("blue")
 var dad = dad.fontcolor("red") //now we assign colors to them all and write one//
