@@ -11,6 +11,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 //current slide uses the showslides function to show what slide you are on by looking at the slide shown by the slideindex
+ 
 
 function showSlides(n) {
     //create function showslides and create 3 variables i, slides, and dots

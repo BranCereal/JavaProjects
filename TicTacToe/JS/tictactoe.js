@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
             activePlayer = "x"
         }
         //this function plays placement sound.
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
         //this condition checks to see if it is cpus turn
         if(activePlayer === "o") {
             //this function disables clicking for computer choice
@@ -124,7 +124,7 @@ function checkWinConditions() {
     //squares are selected, the code executes
     else if(selectedSquares.length >= 9) {
         //this function plays the tie game sound.
-        Audio('./media/tie.mp3');
+        audio('./media/tie.mp3');
         //this function sets a .3 second timer before the resetGame is called
         setTimeout(function() { resetGame() ; }, 1000)
     }
@@ -153,7 +153,7 @@ function disableClick() {
 //placement sound ('/media/place.mp3')
 function audio(audioURL) {
     //we create a new audio object and we pass the path as a parameter.
-    let audio = new Audio(audioURL);
+    let audio = new audio(audioURL);
     //Play method plays our audio sound
     audio.play();
 }
@@ -165,13 +165,13 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //this line gives us access to methods and properties to use on canvas
     const c = canvas.getContext('2d');
     //this line indicates where the start of a lines x axis is
-    let x1 = coordX1,
+    let x1 = coordX1;
     //this line indicates where the start of a lines y axis is
-    let y1 = coordY1, 
+    let y1 = coordY1; 
     //this line indicate where the end of a lines x axis is
-    let x2 = coordX2, 
+    let x2 = coordX2;
     //this line indicates where the end of a lines x axis is
-    let y2 = coordY2,
+    let y2 = coordY2;
     //this variable stores temporary x axis data we update in our animation loop
     x = x1,
     //this variable stores temporary y axis data we update in our animation loop
