@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8"> <!-- set our charset-->
+    </head>
+    <body>
+        <script src="JS/main.js"></script> <!-- make our script a thing/point to where source is-->
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+        <!--containers for slideshows-->
+        <div class="slideshowcont">
+
+
+            <!-- set of the images with the number/caption text-->
+            <div class="mySlides fader">
+                <div class="slideof">1 of 3</div>
+                <img src="img1.jpg" style="width:100%">
+                <div class="write"> Our first image</div>
+            </div>
+
+            <div class="mySlides fader">
+                <div class="slideof">2 of 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="write"> Our second image</div>
+            </div>
+
+            <div class="mySlides fader">
+                <div class="slideof">3 of 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="write"> Our third image</div>
+            </div>
+
+            <!--buttons for moving it back and froth-->
+            <a class="b4" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="aftr" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <!-- position indicator-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    
+        
+    
+
+    
+    </body>
+
+    </html>
